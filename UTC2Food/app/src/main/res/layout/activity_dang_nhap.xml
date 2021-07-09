@@ -22,7 +22,6 @@
             android:layout_width="match_parent"
             android:hint="Nhập mã số sinh viên"
             android:textSize="20dp"
-            android:text="5851071051"
             android:inputType="number"
             android:maxLength="10"
             android:id="@+id/edtusername"
@@ -38,7 +37,6 @@
             android:inputType="textPassword"
             android:textSize="20dp"
             android:hint="Nhập mật khẩu"
-            android:text="123"
             android:id="@+id/edtpassword"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
