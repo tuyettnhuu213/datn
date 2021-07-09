@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appbanhang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logobackground"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Appbanhang"
+        tools:replace="android:label,android:supportsRtl,android:theme">
+        <activity android:name=".activity.QuenMatKhauActivity"></activity>
+        <activity
+            android:name=".activity.SanPhamActivity"
+            android:label="@string/title_activity_san_pham"
+            android:theme="@style/Theme.Appbanhang.NoActionBar" />
+        <activity android:name=".activity.ChiTietHoaDonActivity" />
+        <activity android:name=".activity.LichSuActivity" />
+        <activity android:name=".activity.DoiMatKhauActivity" />
+        <activity android:name=".activity.ThongTinActivity" />
+        <activity android:name=".activity.CaNhanActivity" />
+        <activity android:name=".activity.DangNhapActivity" />
+        <activity android:name=".activity.DatHangThanhCongActivity" />
+        <activity android:name=".activity.ThongTinNguoiMuaActivity" />
+        <activity android:name=".activity.GioHang" />
+        <activity android:name=".activity.ChiTietSanPham" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.test-payment.momo.vn"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

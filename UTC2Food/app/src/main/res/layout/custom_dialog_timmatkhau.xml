@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/edtTimTaiKhoan"
+        android:textSize="17dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#616161"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên tài khoản" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Xác nhận"
+            android:id="@+id/btnConfirmTenTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/hinhvuong"
+            android:padding="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_700"/>
+        <Button
+            android:text="Trở về"
+            android:id="@+id/btnCancelTenTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/hinhvuong"
+            android:padding="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_700"/>/>
+    </LinearLayout>
+
+
+</LinearLayout>

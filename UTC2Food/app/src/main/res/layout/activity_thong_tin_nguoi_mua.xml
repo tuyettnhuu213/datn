@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundn"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinNguoiMuaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:textColorHint="@color/teal_700"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/edtTen"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Họ và tên"
+         android:selectAllOnFocus="false"
+         android:singleLine="true" />
+
+ </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/teal_700"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtSDT"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Số điện thoại"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:textColorHint="@color/teal_700"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:hint="Số phòng"
+        android:inputType="number"
+        android:maxLength="3"
+        android:id="@+id/edtDiaChi"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Mã số sinh viên"
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/edtdkusername"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="@color/teal_700"
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Mật khẩu"
+
+            android:inputType="textPassword"
+            android:id="@+id/edtdkpassword"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="@color/teal_700"
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:id="@+id/edtdkpassword2"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+  <LinearLayout
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+          android:text="Xác nhận"
+          android:id="@+id/btnXacNhan"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:background="@drawable/hinhvuong"
+          android:padding="20dp"
+          android:textSize="16dp"
+          android:textStyle="bold"
+          app:backgroundTint="@color/teal_700"/>
+      <Button
+          android:text="Trở về"
+          android:id="@+id/btnTroVe"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:background="@drawable/hinhvuong"
+          android:padding="20dp"
+          android:textSize="16dp"
+          android:textStyle="bold"
+          app:backgroundTint="@color/teal_700"/>
+  </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

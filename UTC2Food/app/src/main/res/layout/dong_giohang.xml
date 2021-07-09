@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transfer"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_gravity="center"
+                android:foreground="@drawable/aaa"
+                android:id="@+id/imvdonggiohang"
+                android:layout_width="120dp"
+                android:background="@drawable/img"
+                android:layout_height="120dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTenDongGioHang"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="TÊN SẢN PHẨM"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtTTDongGioHang"
+                android:layout_margin="2dp"
+                android:textSize="13dp"
+                android:textColor="#FFEB3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtGiaDongGioHang"
+                android:text="GIÁ SẢN PHẨM"
+                android:textColor="#FF9800"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/edtGhiChuGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:hint="Ghi chú"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnTru"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/minus"
+                    android:focusable="false"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="add"
+                    app:icon="@drawable/minus"
+                    app:iconTint="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/edtSoLuongGio"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnCong"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/plus"
+                    android:focusable="false"
+                    android:text="+"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@android:color/transparent"
+                    app:backgroundTintMode="add" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="1dp"
+                android:gravity="right"
+                app:backgroundTint="#F44336"
+                app:icon="@android:drawable/ic_menu_delete"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

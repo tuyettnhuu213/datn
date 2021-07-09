@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UTC2FoodAdmin</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgerpass"><u>Quên mật khẩu</u></string>
+</resources>

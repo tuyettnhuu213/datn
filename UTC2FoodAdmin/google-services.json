@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "364353904016",
+    "firebase_url": "https://datn-3342f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "datn-3342f",
+    "storage_bucket": "datn-3342f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364353904016:android:c91a29fbadfa8e8c6b2715",
+        "android_client_info": {
+          "package_name": "com.example.foradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364353904016-mvr84uv2scqafj67dke0gj2fojfqpu1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfS6_2hVaD6XX0Rpttxt0-lJcBusjmYD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364353904016-mvr84uv2scqafj67dke0gj2fojfqpu1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

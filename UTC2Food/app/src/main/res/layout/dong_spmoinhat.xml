@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardview"
+        app:cardBackgroundColor="#E4E6E6"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/retangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imvsp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:foreground="@drawable/aaa"
+                app:srcCompat="@drawable/plus" />
+            <TextView
+                android:textSize="13dp"
+                android:layout_margin="2dp"
+                android:id="@+id/txttensp"
+                android:gravity="center"
+                android:text="Tên sản phẩm"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/txttinhtrang"
+                android:layout_margin="2dp"
+                android:textSize="13dp"
+                android:textColor="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtgiasp"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:text="Giá sản phẩm"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </FrameLayout>
+        <ImageView
+        android:id="@+id/imvhamoi"
+        android:src="@drawable/newww"
+        android:layout_gravity="top|right"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+    </ImageView>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

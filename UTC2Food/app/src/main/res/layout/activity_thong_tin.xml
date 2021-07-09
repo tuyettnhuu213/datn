@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ThongTinActivity">
+    <ImageView
+        android:id="@+id/imvdangnhap"
+        android:layout_gravity="center"
+        android:src="@drawable/logopng"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"
+        android:layout_gravity="center"
+        android:id="@+id/txtThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xin chào"/>
+    <Button
+        android:id="@+id/btnThongTinCaNhan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="thông tin cá nhân"
+        android:background="@drawable/hinhvuong"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_700"/>
+    <Button
+        android:id="@+id/btnDoiMatKhau"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="Đổi mật khẩu"
+        android:background="@drawable/hinhvuong"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_700"/>
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="đăng xuất"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_700"
+        android:background="@drawable/hinhvuong"
+        />
+    <Button
+        android:id="@+id/btnLichSuMuaHang"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="Xem lịch sử mua hàng"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_700"
+        android:background="@drawable/hinhvuong"
+         />
+</LinearLayout>
