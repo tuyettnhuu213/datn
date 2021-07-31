@@ -182,6 +182,7 @@ public class ChiTietSanPham extends AppCompatActivity {
             txtTT.setTextColor(R.color.red);
             btnThemVaoGio.setEnabled(false);
             edtGhiChu.setEnabled(false);
+            btnMuaNgay.setEnabled(false);
         }
         Picasso.get().load(server.localhost+hasp).placeholder(R.drawable.loading).error(R.drawable.nosignal).into(imvCTSP);
         if (idloai == 1){

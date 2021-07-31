@@ -4,7 +4,7 @@ public class server {
   //  public static String localhost = "http://192.168.11.183/server/";
     //public static String localhost = "https://tuyetnhu213.000webhostapp.com/";
   //public static final String Base_Url = "http://192.168.1.14"+"/doantotnghiep/forUser";
-    public static String localhost = "https://datn.webstudents.xyz/";
+    public static String localhost = "http://doantotnghiep.xyz/";
     public static String duongdanloaisp = localhost+"getloaisp.php";
     public static String duongdanspmoi = localhost+"getspmoi.php";
     public static String duongdansp = localhost+"getsp.php?page=";

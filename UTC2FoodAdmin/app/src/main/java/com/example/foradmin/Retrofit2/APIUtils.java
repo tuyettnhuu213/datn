@@ -8,7 +8,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 public class APIUtils extends Activity {
-    public static final String Base_Url = "https://datn.webstudents.xyz/";
+    public static final String Base_Url = "http://doantotnghiep.xyz/";
     public static String getloaisp = Base_Url+"getloaisp.php";
     public static String getsp = Base_Url+"getsp.php?page=";
     public static String getcthoadon = Base_Url+"getCTHD.php";
@@ -18,7 +18,6 @@ public class APIUtils extends Activity {
     public static String updateloaisp = Base_Url + "updateloaisp.php";
     public static String updatesanpham = Base_Url + "updatesanpham.php";
     public static String updatetthd = Base_Url + "updatetthd.php";
-    public static String getdoanhthu = Base_Url + "getdoanhthu.php";
     public static String getSLHD = Base_Url + "inserttoken.php";
     public static DataClient getData(){
         return RetrofitClient.getClient(Base_Url).create(DataClient.class);
