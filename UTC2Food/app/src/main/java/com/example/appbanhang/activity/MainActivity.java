@@ -16,6 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -259,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONArray response) {
                 if (response != null) {
+                    Log.d("TAG",response.toString());
                     int id = 0, idsp = 0, giasp = 0;
                     String tensp = "", hasp = "", mota = "";
                     int tinhtrang = 0;

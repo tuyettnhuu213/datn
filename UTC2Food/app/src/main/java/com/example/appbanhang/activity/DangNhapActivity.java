@@ -264,13 +264,13 @@ PhoneAuthProvider.ForceResendingToken token;
                                     tenkh = jsonObject.getString("TenKH");
                                     diachi = jsonObject.getString("DiaChi");
                                     sdt = jsonObject.getString("SDT");
-                                    dtl = jsonObject.getInt("SDT");
+                                    dtl = jsonObject.getInt("DTL");
                                     password = jsonObject.getString("password");
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-                            MainActivity.KHang = new khachhang(username,dtl,tenkh,diachi,sdt,password);
+                            MainActivity.KHang = new khachhang(username,dtl,tenkh,sdt,diachi,password);
                             Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                             MainActivity.reloaiSL();
                             startActivity(intent);
