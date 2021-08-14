@@ -82,7 +82,6 @@ public class LichSuActivity extends AppCompatActivity {
             public void onResponse(String response) {
                 int IdHD = 0, IdKH = 0, tinhtrang = 0, TongTien =0,TTThanhToan;
                 String ThoiGianDat="",ThoiGianNhan,Ngay,PTThanhToan,MSSV;
-                Boolean tt = true;
                 if (response != null && response.length() != 2) {
                       lvLichSu.removeFooterView(footer);
                     try {
@@ -99,11 +98,7 @@ public class LichSuActivity extends AppCompatActivity {
                             TTThanhToan = jsonObject.getInt("TTThanhToan");
                             PTThanhToan = jsonObject.getString("PTThanhToan");
                             MSSV = jsonObject.getString("MSSV");
-                            if (tinhtrang == 1)
-                                tt = true;
-                            else
-                                tt = false;
-                            arrayHoaDon.add(new HoaDon(IdHD, IdKH,TongTien,ThoiGianDat,tt));
+                            arrayHoaDon.add(new HoaDon(IdHD, IdKH,TongTien,ThoiGianDat,tinhtrang));
                             hoaDonAdapter.notifyDataSetChanged();
                         }
 

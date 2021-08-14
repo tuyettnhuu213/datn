@@ -1,5 +1,6 @@
 package com.example.appbanhang.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class ProductAdapter  extends BaseAdapter {
         return position;
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
      ViewHolder viewHolder = null;
@@ -65,10 +67,14 @@ public class ProductAdapter  extends BaseAdapter {
         viewHolder.txtten.setText(sp.getTensp());
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         viewHolder.txtgia.setText("$"+decimalFormat.format(sp.getGiasp())+"đ");
-        if(sp.isTinhtrang() == true )
+        if(sp.isTinhtrang() == true ){
+            viewHolder.txttt.setTextColor(R.color.blue);
             viewHolder.txttt.setText("Còn hàng");
-        else
+           }
+        else{
+            viewHolder.txttt.setTextColor(R.color.red);
             viewHolder.txttt.setText("Tạm hết");
+        }
         if (sp.getHinhanhsp().length()==0)
         {
             viewHolder.imv.setImageResource(R.drawable.nosignal);

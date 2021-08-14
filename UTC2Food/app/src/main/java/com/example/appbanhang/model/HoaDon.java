@@ -3,6 +3,16 @@ package com.example.appbanhang.model;
 import android.content.Intent;
 
 public class HoaDon {
+    int IdHD,IdKH,TongTien;
+
+    public HoaDon(int idHD, int idKH, int tongTien, String thoiGian, int tinhtrang) {
+        IdHD = idHD;
+        IdKH = idKH;
+        TongTien = tongTien;
+        ThoiGian = thoiGian;
+        Tinhtrang = tinhtrang;
+    }
+
     public int getIdHD() {
         return IdHD;
     }
@@ -35,24 +45,14 @@ public class HoaDon {
         ThoiGian = thoiGian;
     }
 
-    public boolean isTinhtrang() {
-        return tinhtrang;
+    public int getTinhtrang() {
+        return Tinhtrang;
     }
 
-    public void setTinhtrang(boolean tinhtrang) {
-        this.tinhtrang = tinhtrang;
-    }
-
-    int IdHD,IdKH,TongTien;
-
-    public HoaDon(int idHD, int idKH, int tongTien, String thoiGian, boolean tinhtrang) {
-        IdHD = idHD;
-        IdKH = idKH;
-        TongTien = tongTien;
-        ThoiGian = thoiGian;
-        this.tinhtrang = tinhtrang;
+    public void setTinhtrang(int tinhtrang) {
+        Tinhtrang = tinhtrang;
     }
 
     String ThoiGian;
-    boolean tinhtrang;
+    int Tinhtrang;
 }

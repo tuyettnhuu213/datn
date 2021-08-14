@@ -73,11 +73,18 @@ public class HoaDonAdapter extends BaseAdapter {
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         viewHolder.txtThoiGian.setText("Thời gian: "+hd.getThoiGian());
         viewHolder.txtTien.setText("$"+decimalFormat.format(hd.getTongTien())+"đ");
-        if(hd.isTinhtrang() == true )
-            viewHolder.txtTinhtrangHD.setText("Đã giao");
-        else
+        if(hd.getTinhtrang() == 0 )
+            viewHolder.txtTinhtrangHD.setText("Chờ xác nhận");
+        else if(hd.getTinhtrang() == 1 )
         {
-            viewHolder.txtTinhtrangHD.setText("Chưa giao");
+            viewHolder.txtTinhtrangHD.setText("Chờ đóng gói");
+        }
+        else if(hd.getTinhtrang() == 2 )
+        {
+            viewHolder.txtTinhtrangHD.setText("Chờ giao hàng");
+        }
+        else    {
+            viewHolder.txtTinhtrangHD.setText("Đã giao");
         }
             viewHolder.btnMua.setOnClickListener(new View.OnClickListener() {
             @Override

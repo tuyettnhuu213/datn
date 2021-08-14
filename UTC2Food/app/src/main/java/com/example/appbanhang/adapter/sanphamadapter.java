@@ -49,12 +49,14 @@ public class sanphamadapter extends RecyclerView.Adapter<sanphamadapter.ItemHold
         holder.txttensp.setText(sp.getTensp());
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
         holder.txtgiasp.setText("$"+decimalFormat.format(sp.getGiasp())+"đ");
-        if(sp.isTinhtrang() == true )
+        if(sp.isTinhtrang() == true ){
+            holder.txttinhtrang.setTextColor(R.color.blue);
             holder.txttinhtrang.setText("Còn hàng");
+            }
         else
         {
-            holder.txttinhtrang.setText("Tạm hết");
             holder.txttinhtrang.setTextColor(R.color.red);
+            holder.txttinhtrang.setText("Tạm hết");
         }
         if (sp.getHinhanhsp().length()==0)
         {

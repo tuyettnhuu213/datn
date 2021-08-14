@@ -9,11 +9,14 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.content.DialogInterface;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -82,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     Button search;
     String tenloaisp;
     String hinhanhloaisp;
+    SwipeRefreshLayout swipeLayout;
     public static ArrayList<giohang> manggiohang;
     public static khachhang KHang;
     FloatingActionButton fab ;
@@ -105,7 +109,20 @@ public class MainActivity extends AppCompatActivity {
             checkconnection.showToast_short(getApplicationContext(), "Hãy kiểm tra kết nối mạng");
             finish();
         }
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                getloaisp();
+                getspmoi();
+                new Handler().postDelayed(new Runnable() {
+                    @Override public void run() {
+                        // Stop animation (This will be after 3 seconds)
+                        swipeLayout.setRefreshing(false);
+                    }
+                }, 2000);
 
+            }
+        });
     }
 
     private void getmoredate() {
@@ -255,6 +272,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getspmoi() {
+        mangsp.clear();
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(server.duongdanspmoi, new Response.Listener<JSONArray>() {
             @Override
@@ -367,7 +385,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("ResourceAsColor")
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void anhxa() {
-
+        swipeLayout = findViewById(R.id.swipeContainer);
         toolbar = findViewById(R.id.toolbar);
         navigationView = (NavigationView) findViewById(R.id.navigationview);
         listView = (ListView) findViewById(R.id.listviewmanhinh);

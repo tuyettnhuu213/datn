@@ -11,5 +11,6 @@
     <color name="gray">#E4E6E6</color>
     <color name="transfer">#00000000</color>
     <color name="pink">#FFC33D5C</color>
-
+    <color name="blue">#2196F3</color>
+    <color name="orrange">#FF9800</color>
 </resources>
